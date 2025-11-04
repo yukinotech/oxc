@@ -896,6 +896,21 @@ impl RuleRunner for crate::rules::eslint::no_with::NoWith {
     const RUN_FUNCTIONS: RuleRunFunctionsImplemented = RuleRunFunctionsImplemented::Run;
 }
 
+impl RuleRunner for crate::rules::eslint::no_zero_width_chars::NoZeroWidthChars {
+    const NODE_TYPES: Option<&AstTypesBitset> = Some(&AstTypesBitset::from_types(&[
+        AstType::BindingIdentifier,
+        AstType::IdentifierName,
+        AstType::IdentifierReference,
+        AstType::JSXIdentifier,
+        AstType::JSXText,
+        AstType::LabelIdentifier,
+        AstType::PrivateIdentifier,
+        AstType::StringLiteral,
+        AstType::TemplateElement,
+    ]));
+    const RUN_FUNCTIONS: RuleRunFunctionsImplemented = RuleRunFunctionsImplemented::Run;
+}
+
 impl RuleRunner for crate::rules::eslint::operator_assignment::OperatorAssignment {
     const NODE_TYPES: Option<&AstTypesBitset> =
         Some(&AstTypesBitset::from_types(&[AstType::AssignmentExpression]));

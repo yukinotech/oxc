@@ -1,0 +1,31 @@
+---
+source: crates/oxc_linter/src/tester.rs
+assertion_line: 413
+---
+  ⚠ eslint(no-zero-width-chars): Unexpected zero-width character U+200C
+   ╭─[no_zero_width_chars.tsx:1:7]
+ 1 │ const f‌oo = 1;
+   ·       ───
+   ╰────
+  help: Remove the zero-width character to avoid hidden bugs
+
+  ⚠ eslint(no-zero-width-chars): Unexpected zero-width character U+200D
+   ╭─[no_zero_width_chars.tsx:1:15]
+ 1 │ const obj = { pr‍op: 1 };
+   ·               ────
+   ╰────
+  help: Remove the zero-width character to avoid hidden bugs
+
+  ⚠ eslint(no-zero-width-chars): Unexpected zero-width character U+200B
+   ╭─[no_zero_width_chars.tsx:1:14]
+ 1 │ const text = "\u200B";
+   ·              ────────
+   ╰────
+  help: Remove the zero-width character to avoid hidden bugs
+
+  ⚠ eslint(no-zero-width-chars): Unexpected zero-width character U+200D
+   ╭─[no_zero_width_chars.tsx:1:16]
+ 1 │ const hidden = "a‍b";
+   ·                ────
+   ╰────
+  help: Remove the zero-width character to avoid hidden bugs

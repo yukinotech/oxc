@@ -98,7 +98,7 @@ impl LanguageServer for Backend {
         });
 
         info!("initialize: {options:?}");
-        info!("language server version: {server_version}");
+        info!("language server version by ytk: {server_version}");
 
         let capabilities = Capabilities::from(params.capabilities);
 

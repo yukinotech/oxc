@@ -173,6 +173,7 @@ pub(crate) mod eslint {
     pub mod no_void;
     pub mod no_warning_comments;
     pub mod no_with;
+    pub mod no_zero_width_chars;
     pub mod operator_assignment;
     pub mod prefer_destructuring;
     pub mod prefer_exponentiation_operator;
@@ -797,6 +798,7 @@ oxc_macros::declare_all_lint_rules! {
     eslint::no_void,
     eslint::no_warning_comments,
     eslint::no_with,
+    eslint::no_zero_width_chars,
     eslint::operator_assignment,
     eslint::prefer_template,
     eslint::prefer_destructuring,
