@@ -111,13 +111,13 @@ function copyDistFiles() {
 
 // NOTE: Must update npm/oxlint/bin/oxc_language_server
 const TARGETS = [
-  'win32-x64',
-  'win32-arm64',
+  // 'win32-x64',
+  // 'win32-arm64',
   'linux-x64-gnu',
-  'linux-arm64-gnu',
-  'linux-x64-musl',
-  'linux-arm64-musl',
-  'darwin-x64',
+  // 'linux-arm64-gnu',
+  // 'linux-x64-musl',
+  // 'linux-arm64-musl',
+  // 'darwin-x64',
   'darwin-arm64',
 ];
 
