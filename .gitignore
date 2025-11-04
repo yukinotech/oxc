@@ -60,3 +60,7 @@ tasks/prettier_conformance/prettier/
 oxlint-darwin-arm64
 oxlint-linux-x64-gnu
 dist
+oxc_language_server-darwin-arm64
+oxc_language_server-linux-x64-gnu
+oxlint.darwin-arm64.node
+oxlint.linux-x64-gnu.node

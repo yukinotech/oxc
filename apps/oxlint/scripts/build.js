@@ -11,7 +11,7 @@ const bindingsPath = join(oxlintDirPath, 'src-js/bindings.js');
 let bindingsJs = readFileSync(bindingsPath, 'utf8');
 bindingsJs = bindingsJs.replace(/require\('@oxlint\/binding-(.+?)'\)/g, (_, name) => {
   name = name.replace(/-msvc(\/|$)/g, '$1');
-  return `require('@oxlint/${name}')`;
+  return `require('@ytk-oxlint/${name}')`;
 });
 writeFileSync(bindingsPath, bindingsJs);
 
