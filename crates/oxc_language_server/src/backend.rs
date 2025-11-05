@@ -72,6 +72,7 @@ impl LanguageServer for Backend {
     #[expect(deprecated)] // `params.root_uri` is deprecated, we are only falling back to it if no workspace folder is provided
     async fn initialize(&self, params: InitializeParams) -> Result<InitializeResult> {
         let server_version = env!("CARGO_PKG_VERSION");
+        let log_server_version = option_env!("OXC_VERSION").unwrap_or(env!("CARGO_PKG_VERSION"));
         // initialization_options can be anything, so we are requesting `workspace/configuration` when no initialize options are provided
         let options = params.initialization_options.and_then(|mut value| {
             // the client supports the new settings object
@@ -98,7 +99,7 @@ impl LanguageServer for Backend {
         });
 
         info!("initialize: {options:?}");
-        info!("language server version by ytk: {server_version}");
+        info!("language server version by ytk: {log_server_version}");
 
         let capabilities = Capabilities::from(params.capabilities);
 

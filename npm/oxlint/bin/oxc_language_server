@@ -66,32 +66,32 @@ const BIN_NAME = "oxc_language_server";
 const PLATFORMS = {
   win32: {
     x64: {
-      musl: `@oxlint/win32-x64/${BIN_NAME}.exe`,
-      gnu: `@oxlint/win32-x64/${BIN_NAME}.exe`,
+      musl: `@ytk-oxlint/win32-x64/${BIN_NAME}.exe`,
+      gnu: `@ytk-oxlint/win32-x64/${BIN_NAME}.exe`,
     },
     arm64: {
-      musl: `@oxlint/win32-arm64/${BIN_NAME}.exe`,
-      gnu: `@oxlint/win32-arm64/${BIN_NAME}.exe`,
+      musl: `@ytk-oxlint/win32-arm64/${BIN_NAME}.exe`,
+      gnu: `@ytk-oxlint/win32-arm64/${BIN_NAME}.exe`,
     },
   },
   darwin: {
     x64: {
-      musl: `@oxlint/darwin-x64/${BIN_NAME}`,
-      gnu: `@oxlint/darwin-x64/${BIN_NAME}`,
+      musl: `@ytk-oxlint/darwin-x64/${BIN_NAME}`,
+      gnu: `@ytk-oxlint/darwin-x64/${BIN_NAME}`,
     },
     arm64: {
-      musl: `@oxlint/darwin-arm64/${BIN_NAME}`,
-      gnu: `@oxlint/darwin-arm64/${BIN_NAME}`,
+      musl: `@ytk-oxlint/darwin-arm64/${BIN_NAME}`,
+      gnu: `@ytk-oxlint/darwin-arm64/${BIN_NAME}`,
     },
   },
   linux: {
     x64: {
-      musl: `@oxlint/linux-x64-musl/${BIN_NAME}`,
-      gnu: `@oxlint/linux-x64-gnu/${BIN_NAME}`,
+      musl: `@ytk-oxlint/linux-x64-musl/${BIN_NAME}`,
+      gnu: `@ytk-oxlint/linux-x64-gnu/${BIN_NAME}`,
     },
     arm64: {
-      musl: `@oxlint/linux-arm64-musl/${BIN_NAME}`,
-      gnu: `@oxlint/linux-arm64-gnu/${BIN_NAME}`,
+      musl: `@ytk-oxlint/linux-arm64-musl/${BIN_NAME}`,
+      gnu: `@ytk-oxlint/linux-arm64-gnu/${BIN_NAME}`,
     },
   },
 };

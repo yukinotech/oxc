@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+!/usr/bin/env bash
 
-export OXC_VERSION="1.25.0-alpha-5"
+export OXC_VERSION="1.25.0-alpha-8"
 
 node scripts/update-version.js
 
@@ -26,3 +26,15 @@ node scripts/copy-artifacts.js
 node npm/oxlint/scripts/generate-packages.js
 node scripts/clean-artifacts.js
 node scripts/scope-oxlint-packages.js
+
+cd npm/oxlint
+npm publish
+cd ../..
+
+cd npm/oxlint-linux-x64-gnu
+npm publish
+cd ../..
+
+cd npm/oxlint-darwin-arm64
+npm publish
+cd ../..
