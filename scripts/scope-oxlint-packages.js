@@ -21,7 +21,19 @@ for (const { dir, scopedName } of targets) {
   }
 
   data.name = scopedName;
+  if (dir === 'npm/oxlint' && data.optionalDependencies) {
+    const renamedOptionalDeps = {};
+    for (const [depName, depVersion] of Object.entries(data.optionalDependencies)) {
+      if (depName.startsWith('@oxlint/')) {
+        const suffix = depName.slice('@oxlint/'.length);
+        renamedOptionalDeps[`@ytk-oxlint/${suffix}`] = depVersion;
+      } else {
+        renamedOptionalDeps[depName] = depVersion;
+      }
+    }
+    data.optionalDependencies = renamedOptionalDeps;
+  }
+
   const updated = `${JSON.stringify(data, null, 2)}\n`;
   fs.writeFileSync(filePath, updated);
 }
-

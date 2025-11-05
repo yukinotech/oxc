@@ -79,10 +79,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/android-arm64')
-        const bindingPackageVersion = require('@oxlint/android-arm64/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/android-arm64')
+        const bindingPackageVersion = require('@ytk-oxlint/android-arm64/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -95,10 +95,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/android-arm-eabi')
-        const bindingPackageVersion = require('@oxlint/android-arm-eabi/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/android-arm-eabi')
+        const bindingPackageVersion = require('@ytk-oxlint/android-arm-eabi/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -116,10 +116,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/win32-x64-gnu')
-        const bindingPackageVersion = require('@oxlint/win32-x64-gnu/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/win32-x64-gnu')
+        const bindingPackageVersion = require('@ytk-oxlint/win32-x64-gnu/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -132,10 +132,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/win32-x64')
-        const bindingPackageVersion = require('@oxlint/win32-x64/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/win32-x64')
+        const bindingPackageVersion = require('@ytk-oxlint/win32-x64/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -149,10 +149,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/win32-ia32')
-        const bindingPackageVersion = require('@oxlint/win32-ia32/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/win32-ia32')
+        const bindingPackageVersion = require('@ytk-oxlint/win32-ia32/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -165,10 +165,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/win32-arm64')
-        const bindingPackageVersion = require('@oxlint/win32-arm64/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/win32-arm64')
+        const bindingPackageVersion = require('@ytk-oxlint/win32-arm64/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -184,10 +184,10 @@ function requireNative() {
       loadErrors.push(e)
     }
     try {
-      const binding = require('@oxlint/darwin-universal')
-      const bindingPackageVersion = require('@oxlint/darwin-universal/package.json').version
-      if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-        throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+      const binding = require('@ytk-oxlint/darwin-universal')
+      const bindingPackageVersion = require('@ytk-oxlint/darwin-universal/package.json').version
+      if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+        throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
       }
       return binding
     } catch (e) {
@@ -200,10 +200,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/darwin-x64')
-        const bindingPackageVersion = require('@oxlint/darwin-x64/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/darwin-x64')
+        const bindingPackageVersion = require('@ytk-oxlint/darwin-x64/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -216,10 +216,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/darwin-arm64')
-        const bindingPackageVersion = require('@oxlint/darwin-arm64/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/darwin-arm64')
+        const bindingPackageVersion = require('@ytk-oxlint/darwin-arm64/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -236,10 +236,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/freebsd-x64')
-        const bindingPackageVersion = require('@oxlint/freebsd-x64/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/freebsd-x64')
+        const bindingPackageVersion = require('@ytk-oxlint/freebsd-x64/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -252,10 +252,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/freebsd-arm64')
-        const bindingPackageVersion = require('@oxlint/freebsd-arm64/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/freebsd-arm64')
+        const bindingPackageVersion = require('@ytk-oxlint/freebsd-arm64/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -273,10 +273,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxlint/linux-x64-musl')
-          const bindingPackageVersion = require('@oxlint/linux-x64-musl/package.json').version
-          if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@ytk-oxlint/linux-x64-musl')
+          const bindingPackageVersion = require('@ytk-oxlint/linux-x64-musl/package.json').version
+          if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -289,10 +289,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxlint/linux-x64-gnu')
-          const bindingPackageVersion = require('@oxlint/linux-x64-gnu/package.json').version
-          if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@ytk-oxlint/linux-x64-gnu')
+          const bindingPackageVersion = require('@ytk-oxlint/linux-x64-gnu/package.json').version
+          if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -307,10 +307,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxlint/linux-arm64-musl')
-          const bindingPackageVersion = require('@oxlint/linux-arm64-musl/package.json').version
-          if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@ytk-oxlint/linux-arm64-musl')
+          const bindingPackageVersion = require('@ytk-oxlint/linux-arm64-musl/package.json').version
+          if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -323,10 +323,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxlint/linux-arm64-gnu')
-          const bindingPackageVersion = require('@oxlint/linux-arm64-gnu/package.json').version
-          if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@ytk-oxlint/linux-arm64-gnu')
+          const bindingPackageVersion = require('@ytk-oxlint/linux-arm64-gnu/package.json').version
+          if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -341,10 +341,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxlint/linux-arm-musleabihf')
-          const bindingPackageVersion = require('@oxlint/linux-arm-musleabihf/package.json').version
-          if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@ytk-oxlint/linux-arm-musleabihf')
+          const bindingPackageVersion = require('@ytk-oxlint/linux-arm-musleabihf/package.json').version
+          if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -357,10 +357,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxlint/linux-arm-gnueabihf')
-          const bindingPackageVersion = require('@oxlint/linux-arm-gnueabihf/package.json').version
-          if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@ytk-oxlint/linux-arm-gnueabihf')
+          const bindingPackageVersion = require('@ytk-oxlint/linux-arm-gnueabihf/package.json').version
+          if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -375,10 +375,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxlint/linux-loong64-musl')
-          const bindingPackageVersion = require('@oxlint/linux-loong64-musl/package.json').version
-          if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@ytk-oxlint/linux-loong64-musl')
+          const bindingPackageVersion = require('@ytk-oxlint/linux-loong64-musl/package.json').version
+          if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -391,10 +391,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxlint/linux-loong64-gnu')
-          const bindingPackageVersion = require('@oxlint/linux-loong64-gnu/package.json').version
-          if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@ytk-oxlint/linux-loong64-gnu')
+          const bindingPackageVersion = require('@ytk-oxlint/linux-loong64-gnu/package.json').version
+          if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -409,10 +409,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxlint/linux-riscv64-musl')
-          const bindingPackageVersion = require('@oxlint/linux-riscv64-musl/package.json').version
-          if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@ytk-oxlint/linux-riscv64-musl')
+          const bindingPackageVersion = require('@ytk-oxlint/linux-riscv64-musl/package.json').version
+          if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -425,10 +425,10 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@oxlint/linux-riscv64-gnu')
-          const bindingPackageVersion = require('@oxlint/linux-riscv64-gnu/package.json').version
-          if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-            throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+          const binding = require('@ytk-oxlint/linux-riscv64-gnu')
+          const bindingPackageVersion = require('@ytk-oxlint/linux-riscv64-gnu/package.json').version
+          if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+            throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
           return binding
         } catch (e) {
@@ -442,10 +442,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/linux-ppc64-gnu')
-        const bindingPackageVersion = require('@oxlint/linux-ppc64-gnu/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/linux-ppc64-gnu')
+        const bindingPackageVersion = require('@ytk-oxlint/linux-ppc64-gnu/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -458,10 +458,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/linux-s390x-gnu')
-        const bindingPackageVersion = require('@oxlint/linux-s390x-gnu/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/linux-s390x-gnu')
+        const bindingPackageVersion = require('@ytk-oxlint/linux-s390x-gnu/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -478,10 +478,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/openharmony-arm64')
-        const bindingPackageVersion = require('@oxlint/openharmony-arm64/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/openharmony-arm64')
+        const bindingPackageVersion = require('@ytk-oxlint/openharmony-arm64/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -494,10 +494,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/openharmony-x64')
-        const bindingPackageVersion = require('@oxlint/openharmony-x64/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/openharmony-x64')
+        const bindingPackageVersion = require('@ytk-oxlint/openharmony-x64/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -510,10 +510,10 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@oxlint/openharmony-arm')
-        const bindingPackageVersion = require('@oxlint/openharmony-arm/package.json').version
-        if (bindingPackageVersion !== '1.25.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
-          throw new Error(`Native binding package version mismatch, expected 1.25.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
+        const binding = require('@ytk-oxlint/openharmony-arm')
+        const bindingPackageVersion = require('@ytk-oxlint/openharmony-arm/package.json').version
+        if (bindingPackageVersion !== '1.25.0-alpha-3' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
+          throw new Error(`Native binding package version mismatch, expected 1.25.0-alpha-3 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
         return binding
       } catch (e) {
@@ -542,7 +542,7 @@ if (!nativeBinding || process.env.NAPI_RS_FORCE_WASI) {
   }
   if (!nativeBinding) {
     try {
-      wasiBinding = require('@oxlint/wasm32-wasi')
+      wasiBinding = require('@ytk-oxlint/wasm32-wasi')
       nativeBinding = wasiBinding
     } catch (err) {
       if (process.env.NAPI_RS_FORCE_WASI) {

@@ -1,6 +1,6 @@
 {
-  "name": "oxlint",
-  "version": "1.25.0-alpha-1",
+  "name": "@ytk-oxlint/oxlint",
+  "version": "1.25.0-alpha-3",
   "type": "module",
   "description": "Linter for the JavaScript Oxidation Compiler",
   "keywords": [],
@@ -31,5 +31,17 @@
     "configuration_schema.json",
     "dist",
     "README.md"
-  ]
+  ],
+  "optionalDependencies": {
+    "@ytk-oxlint/linux-x64-gnu": "1.25.0-alpha-3",
+    "@ytk-oxlint/darwin-arm64": "1.25.0-alpha-3"
+  },
+  "peerDependencies": {
+    "oxlint-tsgolint": ">=0.4.0"
+  },
+  "peerDependenciesMeta": {
+    "oxlint-tsgolint": {
+      "optional": true
+    }
+  }
 }
