@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export OXC_VERSION="1.25.0-alpha-3"
+export OXC_VERSION="1.25.0-alpha-5"
 
 node scripts/update-version.js
 
